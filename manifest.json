@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Threat Detector",
+    "version": "1.0",
+    "description": "Detect suspicious web connections using ML backend",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "notifications",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>",
+      "http://localhost:9000/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
